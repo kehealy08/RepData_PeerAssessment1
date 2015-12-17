@@ -30,7 +30,7 @@ date.steps <- aggregate(steps ~ date, activitydata, sum)
 ```
 
 ### 2. Make a histogram of the total number of steps taken each day
-```{r, echo=TRUE}
+```{r plot, echo=TRUE}
 hist(date.steps$steps, breaks=10, xlab="Steps Per Day",ylab="Frequency", main="Histogram of Total Steps Per Day (Oct 2012 - Nov 2012)", xlim=c(0,25000))
 ```
 
